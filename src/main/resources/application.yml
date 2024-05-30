@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: publicando-api-na-nuvem-spring-java-railway
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api_rest_spring_dio
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Hiper12*
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create #validate| create | update | create-drop
+    properties:
+      hibernate:
+        format_sql:true
